@@ -183,6 +183,105 @@ To keep your VS Code extensions synchronized between machines:
 
 ![Exporting Extensions](assets/2025-03-01-17-48-42.png)
 
+
+## Installing Essetials
+
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+```
+sudo apt update
+```
+
+```
+sudo apt upgrade
+
+```
+
+Install Python 3.12 and Pip:
+
+```
+sudo apt install python3.12 python3.12-dev python3-pip python3.12-venv -y
+
+```
+
+Set Python 3.12 as the Default Version:
+
+
+```
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.12 1
+```
+Verify the Python version:
+```
+python --version
+```
+![](assets/2025-03-01-22-48-27.png)
+
+
+
+### Step to create a virtual environment:
+
+1. Create a new virtual environment (let’s call it `.venv`):
+   ```bash
+   python -m venv .venv
+   ```
+
+2. Activate the virtual environment:
+   - On Linux/macOS:
+     ```bash
+     source .venv/bin/activate
+     ```
+   - On Windows:
+     ```bash
+     .venv\Scripts\activate
+     ```
+For development we suggest also install (optional):
+```
+pip install ipykernel
+```
+
+ 
+### Node
+
+
+### Check the Current Node.js Version
+Open the terminal and run:
+```bash
+node -v
+```
+This will display the currently installed version.
+
+---
+
+###  Remove the Existing Node.js Version
+If you installed Node.js using `apt`, remove it first:
+```bash
+sudo apt remove -y nodejs
+sudo apt purge -y nodejs
+sudo apt autoremove -y
+```
+
+---
+
+###  Install Node.js 20
+
+####  Using NodeSource
+1. **Add Node.js 20 Repository**
+   ```bash
+   curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+   ```
+2. **Install Node.js**
+   ```bash
+   sudo apt install -y nodejs
+   ```
+3. **Verify the Installation**
+   ```bash
+   node -v
+   ```
+   It should now show `v20.x.x`.
+
+---
+
+
 ---
 
 ## Conclusion
