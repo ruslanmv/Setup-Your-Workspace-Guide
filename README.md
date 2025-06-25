@@ -281,6 +281,19 @@ sudo apt autoremove -y
 
 ---
 
+### Install Git
+
+You can install git using winget tool
+Install winget tool if you don't already have it, then type this command in command prompt or Powershell.
+  ```bash
+winget install --id Git.Git -e --source winget
+   ```
+or simple download the application here.
+[https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+
+
+
+
 
 ---
 
