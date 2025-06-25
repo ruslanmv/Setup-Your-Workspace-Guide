@@ -291,10 +291,11 @@ winget install --id Git.Git -e --source winget
 or simple download the application here.
 [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
 
-
-
-
-
+## Useful tools in unix
+```
+sudo apt update
+sudo apt install dos2unix
+```
 ---
 
 ## Conclusion
